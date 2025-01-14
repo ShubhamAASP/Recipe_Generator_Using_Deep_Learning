@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Recipe Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="{{ url_for('static', filename='logo.png') }}" alt="Recipe Generator Logo" class="logo">
+            <h1>Ingredients Based Recipe Generator</h1>
+        </header>
+        <form method="POST">
+            <label for="ingredients">What's in your kitchen?</label>
+            <input type="text" id="ingredients" name="ingredients" required placeholder="e.g., chicken, rice, onions">
+            <input type="submit" value="Cook up a recipe!">
+        </form>
+        {% if recipe %}
+        <div class="recipe">
+            <h2>Your Delicious Recipe</h2>
+            {{ recipe | safe }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>
