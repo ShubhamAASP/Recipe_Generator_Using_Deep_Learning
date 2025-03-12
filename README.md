@@ -63,15 +63,6 @@ The Exploratory Data Analysis (EDA) process is crucial for understanding the dat
 2. **Model Training**: Train the GPT-2 model on the recipe dataset using the provided notebook.
 3. **Recipe Generation**: After training, input a prompt (e.g., a cuisine or dish type), and the model will generate a recipe complete with ingredients and instructions.
 
-### Example
-
-```python
-prompt = "Generate a vegan recipe for dinner"
-recipe = generate_recipe(prompt)
-print(recipe)
-```
-
-
 ## Results
 
 - The model successfully generates realistic and coherent recipes based on given prompts.
