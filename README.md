@@ -54,7 +54,7 @@ The Exploratory Data Analysis (EDA) process is crucial for understanding the dat
     pip install -r requirements.txt
     ```
 
-3. Upload your dataset (if not already included in the repository) and run the notebook from Google Colab.
+3. Upload your dataset and run the notebook from Google Colab.
 4. Follow the notebook instructions to train the GPT-2 model or use the pre-trained model to generate recipes.
 
 ### Usage
@@ -71,9 +71,6 @@ recipe = generate_recipe(prompt)
 print(recipe)
 ```
 
-### Model Fine-Tuning (Optional)
-
-If you'd like to fine-tune the GPT-2 model with your own dataset, you can follow the instructions in the provided Google Colab notebook.
 
 ## Results
 
